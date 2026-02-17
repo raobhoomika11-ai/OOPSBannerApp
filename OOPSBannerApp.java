@@ -1,15 +1,15 @@
 public class OOPSBannerApp {
 
     public static void main(String[] args) {
-        // Construct each line of the banner using string concatenation + 
-        // Each character is 9 characters wide and 7 lines high 
-        
-        System.out.println("   *** " + " " + "   *** " + " " + "****** " + " " + " ***** ");
-        System.out.println("  ** ** " + " " + "  ** ** " + " " + "** ** " + " " + "** ** ");
-        System.out.println(" ** ** " + " " + " ** ** " + " " + "** ** " + " " + "** ");
-        System.out.println(" ** ** " + " " + " ** ** " + " " + "****** " + " " + " ***** ");
-        System.out.println(" ** ** " + " " + " ** ** " + " " + "** " + " " + "      ** ");
-        System.out.println("  ** ** " + " " + "  ** ** " + " " + "** " + " " + "** ** ");
-        System.out.println("   *** " + " " + "   *** " + " " + "** " + " " + " ***** ");
+        // Use String.join(" ", ...) to join the parts of each line with spaces. [cite: 64]
+        // This is more efficient than the + operator for building patterns. [cite: 33]
+
+        System.out.println(String.join(" ", "   *** ", "   *** ", "****** ", " ***** "));
+        System.out.println(String.join(" ", "  ** ** ", "  ** ** ", "** ** ", " ** ** "));
+        System.out.println(String.join(" ", " ** ** ", " ** ** ", "** ** ", " ** "));
+        System.out.println(String.join(" ", " ** ** ", " ** ** ", "****** ", " ***** "));
+        System.out.println(String.join(" ", " ** ** ", " ** ** ", "** ", "      ** "));
+        System.out.println(String.join(" ", "  ** ** ", "  ** ** ", "** ", " ** ** "));
+        System.out.println(String.join(" ", "   *** ", "   *** ", "** ", " ***** "));
     }
 }
