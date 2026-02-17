@@ -1,6 +1,15 @@
 public class OOPSBannerApp {
+
     public static void main(String[] args) {
-        // Goal: Display the literal text "OOPS" once on the console
-        System.out.println("OOPS");
+        // Construct each line of the banner using string concatenation + 
+        // Each character is 9 characters wide and 7 lines high 
+        
+        System.out.println("   *** " + " " + "   *** " + " " + "****** " + " " + " ***** ");
+        System.out.println("  ** ** " + " " + "  ** ** " + " " + "** ** " + " " + "** ** ");
+        System.out.println(" ** ** " + " " + " ** ** " + " " + "** ** " + " " + "** ");
+        System.out.println(" ** ** " + " " + " ** ** " + " " + "****** " + " " + " ***** ");
+        System.out.println(" ** ** " + " " + " ** ** " + " " + "** " + " " + "      ** ");
+        System.out.println("  ** ** " + " " + "  ** ** " + " " + "** " + " " + "** ** ");
+        System.out.println("   *** " + " " + "   *** " + " " + "** " + " " + " ***** ");
     }
 }
